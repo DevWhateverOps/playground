@@ -1,0 +1,17 @@
+name: Demo
+
+on: [push]
+
+jobs:
+
+  step-01:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: |
+          echo "step 01"
+
+  step-02:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: |
+          echo "step 02"
