@@ -1,3 +1,3 @@
-# testing Github features
+# Testing GitHub Features
 
 > Today: Branch protection
