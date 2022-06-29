@@ -8,10 +8,29 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - run: |
-          echo "step 01"
+          echo "step 01 - start"
 
   step-02:
     runs-on: ubuntu-22.04
+    needs:
+      - step-01
     steps:
       - run: |
           echo "step 02"
+
+  step-03:
+    runs-on: ubuntu-22.04
+    needs:
+      - step-01
+    steps:
+      - run: |
+          echo "step 03"
+
+  step-04:
+    runs-on: ubuntu-22.04
+    needs:
+      - step-02
+      - step-03
+    steps:
+      - run: |
+          echo "step 04 - final"
